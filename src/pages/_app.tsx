@@ -1,6 +1,13 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "leaflet/dist/leaflet.css";
+import type { AppProps } from "next/app";
+import { Catamaran } from "next/font/google";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import "@src/globals.css";
+
+const App = ({ Component, pageProps }: AppProps) => (
+  <main>
+    <Component {...pageProps} />
+  </main>
+);
+
+export default App;
